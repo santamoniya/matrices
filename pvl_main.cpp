@@ -90,29 +90,29 @@ int main()
     m4 = m1 + m3;
 
     cout<<"m4 = m1+m3:"<<endl<<m4<<endl;;
-
-    m5 = m1 * m2;
-
-    cout<<"m5=m1*m2:"<<endl<<m5<<endl;
-
-    m6 = m2 * m1;
-
-    cout<<"m6=m2*m1:"<<endl<<m6<<endl;
-
-    m7 = m5 * m6;
-
-    cout << "m7=m5*m6:" << endl << m7 << endl;
-
-    Matrix v1(1, 10), v2(10, 1), s;
-    for (int i = 0; i < v1.n_spalten(); i++)
-        v1.setze_element(0, i, (double)i);
-    for (int i = 0; i < v2.n_zeilen(); i++)
-        v2.setze_element(i, 0, (double)i);
-    s = v1*v2;
-
-
-    cout << s << endl;
-
+//
+//    m5 = m1 * m2;
+//
+//    cout<<"m5=m1*m2:"<<endl<<m5<<endl;
+//
+//    m6 = m2 * m1;
+//
+//    cout<<"m6=m2*m1:"<<endl<<m6<<endl;
+//
+//    m7 = m5 * m6;
+//
+//    cout << "m7=m5*m6:" << endl << m7 << endl;
+//
+//    Matrix v1(1, 10), v2(10, 1), s;
+//    for (int i = 0; i < v1.n_spalten(); i++)
+//        v1.setze_element(0, i, (double)i);
+//    for (int i = 0; i < v2.n_zeilen(); i++)
+//        v2.setze_element(i, 0, (double)i);
+//    s = v1*v2;
+//
+//
+//    cout << s << endl;
+//
     // (1x1)‐Matrix Konstruktor
     Matrix ew(0.815);
     int e;

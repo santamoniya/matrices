@@ -22,12 +22,13 @@ class Matrix
 private:
     // Setzen Sie hier die Datenelemente
     // der Klasse ein
-    int zeilen, spalten, grosse;
-
+    int zeilen, spalten;
     bool gueltig;
-    vector<size_t> rows;
-    vector<size_t> cols;
+    vector<int> rows;
+    vector<int> cols;
     vector<double> vals;
+    int istNull(int z, int s);
+    int find_position(int z, int s);
 
 public:
     Matrix();
@@ -66,8 +67,8 @@ public:
 
     // Vergleichsoperator
     int operator == (Matrix &m);
-
-    // e3
+//
+//    // e3
     Matrix& are(const Matrix &m);
     Matrix& aun(const Matrix &m);
 };
